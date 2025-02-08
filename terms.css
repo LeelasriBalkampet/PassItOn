@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .grid-container img {
+    grid-column: 1;
+  }
+  
+  .grid-container p {
+    grid-column: 2;
+  }

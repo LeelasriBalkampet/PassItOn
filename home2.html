@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+    <title>Webpage Design</title>
+</head>
+<body>
+    <div>
+        <img src="PassItOn logo.png" alt="image" style="position: absolute; top: 0px; left: 0px; z-index: 1; width: 15%; height: 15;">
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color:rgb(255, 115, 0);
+            padding: 10px 20px;
+            margin-top: 3%;
+            margin-left: 60%;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            background-color: #ef8d50;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            min-width: 170px;
+            z-index: 1;
+        }
+        .filter-bar .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+        .filter-bar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .filter-bar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .filter-bar .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .filter-bar .food{
+            background-color: rgb(255, 48, 48);
+            border-color: rgb(255, 48, 48);
+        }
+        .filter-bar .wanted{
+            background-color: rgb(255, 48, 48);
+            border-color: rgb(255, 48, 48);
+        }
+        .filter-bar .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .filter-bar .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+        
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 20%;
+            margin: 10px 0;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="dropdown">
+            <a href="#">Browse</a>
+            <div class="dropdown-content">
+                <a href="#">Food</a>
+                <a href="#">Non-Food</a>
+                <a href="#">Wanted</a>
+            </div>
+        </div>
+        <a href="#">Add Listing</a>
+        <div class="dropdown">
+            <a href="#">Messages</a>
+            <div class="dropdown-content">
+                <a href="#">Inbox</a>
+                <a href="#">Sent</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">My Profile</a>
+            <div class="dropdown-content">
+                <a href="#">My Impact</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <button class="food">FOOD</button>
+            <div class="dropdown">
+                <button class="non-food">NON-FOOD</button>
+                <div class="dropdown-content">
+                    <a href="#">Free</a>
+                    <a href="#">Buy</a>
+                    <a href="#">Borrow</a>
+                </div>
+            </div>
+            <button class="wanted">WANTED</button>
+        </div>
+        
+
+        <!-- Cards Section -->
+        <div class="card-container">
+            <div class="card">
+                <img src="desklamp.webp" alt="desklamp">
+                <h3>Rudefox By Weird Wolf 3 Colour Mode Led Table / Desk / Study Lamp</h3>
+                <p>Cost: Rs.200</p>
+            </div>
+            <div class="card">
+                <img src="images.jpeg" alt="shoes">
+                <h3>CLARKS Men Oakpark Lace-Up Casual Shoes For Men (Brown, 7)</h3>
+                <p>Cost: Rs.1,500</p>
+            </div>
+            <div class="card">
+                <img src="books.jpg" alt="books">
+                <h3>Mystery Box (30 Original Books) Fiction+ Mystery & Thriller</h3>
+                <p>Can Borrow</p>
+            </div>
+            <div class="card">
+                <img src="sausepan.webp" alt="Pan">
+                <h3>	
+                    Sauce Pan Stainless Steel With Bakelite Handle</h3>
+                <p>usage: since 6 months</p>
+                <p> For free</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
